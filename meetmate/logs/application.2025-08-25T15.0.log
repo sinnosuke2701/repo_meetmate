@@ -1,0 +1,947 @@
+2025-08-25T15:15:50.421 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28417 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:15:50.421 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:15:50.432 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2025-08-25T15:15:50.433 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2025-08-25T15:15:50.709 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:15:50.713 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:15:50.713 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:15:50.714 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:15:50.725 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:15:50.725 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 292 ms 
+2025-08-25T15:15:50.777 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CustomerMapper.xml]' 
+2025-08-25T15:15:50.778 [restartedMain] INFO o.a.c.c.StandardService - Stopping service [Tomcat] 
+2025-08-25T15:15:50.783 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-08-25T15:15:50.788 [restartedMain] ERROR o.s.b.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CustomerMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.meetmate.MeetmateApplication.main(MeetmateApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CustomerMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 26 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CustomerMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:695)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:572)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:712)
+	at com.meetmate.common.config.DbConfigMysqlMain.sqlSessionFactory(DbConfigMysqlMain.java:45)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.CGLIB$sqlSessionFactory$1(<generated>)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:400)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CustomerMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.shinnosuke.infra.customer.CustomerDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.shinnosuke.infra.customer.CustomerDto
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:98)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:693)
+	... 42 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.shinnosuke.infra.customer.CustomerDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.shinnosuke.infra.customer.CustomerDto
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:222)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:214)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:206)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121)
+	... 44 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.shinnosuke.infra.customer.CustomerDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.shinnosuke.infra.customer.CustomerDto
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.shinnosuke.infra.customer.CustomerDto
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 50 common frames omitted
+2025-08-25T15:20:19.575 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:20:19.576 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:20:19.587 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2025-08-25T15:20:19.587 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2025-08-25T15:20:19.860 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:20:19.864 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:20:19.864 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:20:19.864 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:20:19.875 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:20:19.875 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 288 ms 
+2025-08-25T15:20:20.028 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:20:20.036 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:20:20.042 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:20:20.046 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.565 seconds (process running for 0.78) 
+2025-08-25T15:21:43.239 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+2025-08-25T15:21:43.247 [Thread-5] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:21:43.248 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:21:43.260 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:21:43.261 [Thread-5] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:21:43.300 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:21:43.300 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:21:43.370 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:21:43.370 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:21:43.370 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:21:43.370 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:21:43.373 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:21:43.374 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 73 ms 
+2025-08-25T15:21:43.386 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]' 
+2025-08-25T15:21:43.386 [restartedMain] INFO o.a.c.c.StandardService - Stopping service [Tomcat] 
+2025-08-25T15:21:43.389 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-08-25T15:21:43.395 [restartedMain] ERROR o.s.b.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.meetmate.MeetmateApplication.main(MeetmateApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 26 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:695)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:572)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:712)
+	at com.meetmate.common.config.DbConfigMysqlMain.sqlSessionFactory(DbConfigMysqlMain.java:45)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.CGLIB$sqlSessionFactory$2(<generated>)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:400)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:262)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:83)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:692)
+	... 42 common frames omitted
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1013)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	... 45 common frames omitted
+2025-08-25T15:21:56.952 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:21:56.953 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:21:57.021 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:21:57.022 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:21:57.022 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:21:57.022 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:21:57.025 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:21:57.025 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 71 ms 
+2025-08-25T15:21:57.036 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]' 
+2025-08-25T15:21:57.036 [restartedMain] INFO o.a.c.c.StandardService - Stopping service [Tomcat] 
+2025-08-25T15:21:57.038 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-08-25T15:21:57.039 [restartedMain] ERROR o.s.b.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.meetmate.MeetmateApplication.main(MeetmateApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 26 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:695)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:572)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:712)
+	at com.meetmate.common.config.DbConfigMysqlMain.sqlSessionFactory(DbConfigMysqlMain.java:45)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.CGLIB$sqlSessionFactory$2(<generated>)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:400)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/CodeMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.meetmate.infra.code.CodeDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.meetmate.infra.code.CodeDto
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:98)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:693)
+	... 42 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.meetmate.infra.code.CodeDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.meetmate.infra.code.CodeDto
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:222)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:214)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:206)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121)
+	... 44 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.meetmate.infra.code.CodeDto'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.meetmate.infra.code.CodeDto
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.meetmate.infra.code.CodeDto
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 50 common frames omitted
+2025-08-25T15:22:09.599 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:22:09.599 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:22:09.666 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:22:09.667 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:09.667 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:22:09.667 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:22:09.670 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:22:09.670 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 70 ms 
+2025-08-25T15:22:09.719 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:22:09.724 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:09.724 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:22:09.727 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.151 seconds (process running for 110.461) 
+2025-08-25T15:22:09.727 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:22:15.176 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+2025-08-25T15:22:15.179 [Thread-7] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:22:15.180 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:15.183 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:22:15.183 [Thread-7] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:15.229 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:22:15.229 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:22:15.284 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:22:15.284 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:15.284 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:22:15.284 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:22:15.287 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:22:15.287 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 57 ms 
+2025-08-25T15:22:15.326 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:22:15.330 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:15.330 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:22:15.332 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.113 seconds (process running for 116.067) 
+2025-08-25T15:22:15.333 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:22:23.818 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:22:23.820 [Thread-17] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:22:23.821 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:23.823 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:22:23.824 [Thread-17] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:23.869 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:22:23.869 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:22:23.922 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:22:23.922 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:23.922 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:22:23.922 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:22:23.925 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:22:23.925 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 56 ms 
+2025-08-25T15:22:23.969 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:22:23.973 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:23.974 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:22:23.976 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.117 seconds (process running for 124.71) 
+2025-08-25T15:22:23.976 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:22:43.570 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+2025-08-25T15:22:43.572 [Thread-21] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:22:43.572 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:43.575 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:22:43.575 [Thread-21] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:43.616 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:22:43.616 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:22:43.671 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:22:43.672 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:43.672 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:22:43.672 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:22:43.674 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:22:43.674 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 57 ms 
+2025-08-25T15:22:43.713 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:22:43.717 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:43.717 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:22:43.719 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.113 seconds (process running for 144.454) 
+2025-08-25T15:22:43.720 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:22:51.192 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+2025-08-25T15:22:51.194 [Thread-25] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:22:51.195 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:51.197 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:22:51.198 [Thread-25] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:51.242 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:22:51.243 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:22:51.295 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:22:51.295 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:51.295 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:22:51.295 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:22:51.298 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:22:51.298 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 55 ms 
+2025-08-25T15:22:51.336 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:22:51.340 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:51.340 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:22:51.343 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.11 seconds (process running for 152.077) 
+2025-08-25T15:22:51.343 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:22:58.817 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+2025-08-25T15:22:58.819 [Thread-29] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:22:58.820 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:58.822 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:22:58.823 [Thread-29] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:58.867 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:22:58.867 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:22:58.921 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:22:58.921 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:58.921 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:22:58.921 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:22:58.924 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:22:58.924 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 56 ms 
+2025-08-25T15:22:58.962 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:22:58.966 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:22:58.966 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:22:58.968 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.111 seconds (process running for 159.703) 
+2025-08-25T15:22:58.969 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:23:10.476 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+2025-08-25T15:23:10.478 [Thread-33] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:23:10.479 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:10.481 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:23:10.482 [Thread-33] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:10.527 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:23:10.527 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:23:10.580 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:23:10.580 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:10.580 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:23:10.580 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:23:10.583 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:23:10.583 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 55 ms 
+2025-08-25T15:23:10.620 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:23:10.624 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:10.625 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:23:10.627 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.109 seconds (process running for 171.362) 
+2025-08-25T15:23:10.628 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:23:15.064 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:23:15.066 [Thread-37] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:23:15.067 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:15.069 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:23:15.069 [Thread-37] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:15.109 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:23:15.109 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:23:15.161 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:23:15.161 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:15.162 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:23:15.162 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:23:15.164 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:23:15.164 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 54 ms 
+2025-08-25T15:23:15.201 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:23:15.205 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:15.206 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:23:15.208 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.107 seconds (process running for 175.943) 
+2025-08-25T15:23:15.209 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:23:21.668 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:23:21.670 [Thread-41] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:23:21.671 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:21.674 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:23:21.674 [Thread-41] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:21.716 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:23:21.716 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:23:21.768 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:23:21.769 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:21.769 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:23:21.769 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:23:21.771 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:23:21.771 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 55 ms 
+2025-08-25T15:23:21.809 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:23:21.813 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:21.814 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:23:21.816 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.109 seconds (process running for 182.551) 
+2025-08-25T15:23:21.816 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:23:27.269 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:23:27.271 [Thread-45] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:23:27.272 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:27.274 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:23:27.274 [Thread-45] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:27.309 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:23:27.309 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:23:27.360 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:23:27.360 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:27.360 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:23:27.360 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:23:27.363 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:23:27.363 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 53 ms 
+2025-08-25T15:23:27.400 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:23:27.403 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:27.404 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:23:27.406 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.105 seconds (process running for 188.141) 
+2025-08-25T15:23:27.406 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:23:38.921 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications) 
+2025-08-25T15:23:38.922 [Thread-49] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:23:38.922 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:38.923 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:23:38.923 [Thread-49] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:38.948 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:23:38.948 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:23:38.991 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:23:38.991 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:38.991 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:23:38.991 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:23:38.993 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:23:38.993 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 45 ms 
+2025-08-25T15:23:39.005 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/UserMapper.xml]' 
+2025-08-25T15:23:39.005 [restartedMain] INFO o.a.c.c.StandardService - Stopping service [Tomcat] 
+2025-08-25T15:23:39.007 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-08-25T15:23:39.007 [restartedMain] ERROR o.s.b.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactoryMysqlMain' defined in class path resource [com/meetmate/common/config/DbConfigMysqlMain.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/UserMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.meetmate.MeetmateApplication.main(MeetmateApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/UserMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 26 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/mybatis/mapper/mysql/main/infra/UserMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:695)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:572)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:712)
+	at com.meetmate.common.config.DbConfigMysqlMain.sqlSessionFactory(DbConfigMysqlMain.java:45)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.CGLIB$sqlSessionFactory$2(<generated>)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:400)
+	at com.meetmate.common.config.DbConfigMysqlMain$$SpringCGLIB$$0.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172)
+	... 29 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:262)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:83)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:692)
+	... 42 common frames omitted
+Caused by: org.xml.sax.SAXParseException: Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1013)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:260)
+	... 45 common frames omitted
+2025-08-25T15:23:56.614 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:23:56.614 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:23:56.676 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:23:56.677 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:56.677 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:23:56.677 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:23:56.679 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:23:56.679 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 64 ms 
+2025-08-25T15:23:56.716 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:23:56.720 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:23:56.721 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:23:56.723 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.13 seconds (process running for 217.458) 
+2025-08-25T15:23:56.723 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:27:56.976 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:27:56.978 [Thread-53] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:27:56.978 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:27:56.981 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:27:56.982 [Thread-53] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:27:57.029 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:27:57.029 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:27:57.116 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:27:57.117 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:27:57.117 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:27:57.117 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:27:57.121 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:27:57.121 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 91 ms 
+2025-08-25T15:27:57.195 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:27:57.202 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:27:57.203 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:27:57.206 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.188 seconds (process running for 457.943) 
+2025-08-25T15:27:57.207 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:28:07.699 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:28:07.702 [Thread-60] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:28:07.703 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:28:07.705 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:28:07.706 [Thread-60] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:28:07.753 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:28:07.754 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:28:07.836 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:28:07.836 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:28:07.836 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:28:07.836 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:28:07.840 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:28:07.840 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 86 ms 
+2025-08-25T15:28:07.906 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:28:07.913 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:28:07.914 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:28:07.917 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.174 seconds (process running for 468.653) 
+2025-08-25T15:28:07.917 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:30:24.710 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:30:24.712 [Thread-64] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:30:24.712 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:30:24.713 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:30:24.713 [Thread-64] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:30:24.751 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:30:24.752 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:30:24.835 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:30:24.836 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:30:24.836 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:30:24.836 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:30:24.839 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:30:24.839 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 87 ms 
+2025-08-25T15:30:24.903 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:30:24.909 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:30:24.910 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:30:24.914 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.173 seconds (process running for 605.65) 
+2025-08-25T15:30:24.914 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:33:45.288 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:33:45.291 [Thread-68] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:33:45.292 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:33:45.294 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:33:45.295 [Thread-68] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:33:45.332 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:33:45.333 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:33:45.417 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:33:45.417 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:33:45.417 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:33:45.417 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:33:45.421 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:33:45.421 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 88 ms 
+2025-08-25T15:33:45.486 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:33:45.493 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:33:45.494 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:33:45.497 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.175 seconds (process running for 806.235) 
+2025-08-25T15:33:45.498 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:34:10.150 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:34:10.153 [Thread-72] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:34:10.154 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:10.158 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:34:10.158 [Thread-72] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:10.194 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:34:10.194 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:34:10.276 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:34:10.276 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:10.276 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:34:10.276 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:34:10.280 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:34:10.280 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 85 ms 
+2025-08-25T15:34:10.345 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:34:10.352 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:10.353 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:34:10.356 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.172 seconds (process running for 831.094) 
+2025-08-25T15:34:10.356 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:34:27.934 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:34:27.935 [Thread-76] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:34:27.936 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:27.938 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:34:27.938 [Thread-76] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:27.975 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:34:27.976 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:34:28.055 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:34:28.056 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:28.056 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:34:28.056 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:34:28.060 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:34:28.060 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 84 ms 
+2025-08-25T15:34:28.126 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:34:28.134 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:34:28.135 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:34:28.139 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.173 seconds (process running for 848.876) 
+2025-08-25T15:34:28.139 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:35:34.249 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:35:34.251 [Thread-80] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:35:34.252 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:35:34.255 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:35:34.255 [Thread-80] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:35:34.294 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:35:34.295 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:35:34.373 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:35:34.373 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:35:34.373 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:35:34.373 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:35:34.377 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:35:34.377 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 82 ms 
+2025-08-25T15:35:34.441 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:35:34.447 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:35:34.448 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:35:34.451 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.166 seconds (process running for 915.19) 
+2025-08-25T15:35:34.452 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:37:34.037 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:37:34.040 [Thread-84] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:37:34.040 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:37:34.043 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:37:34.043 [Thread-84] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:37:34.080 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:37:34.081 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:37:34.162 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:37:34.163 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:37:34.163 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:37:34.163 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:37:34.167 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:37:34.167 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 86 ms 
+2025-08-25T15:37:34.245 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:37:34.251 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:37:34.252 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:37:34.255 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.185 seconds (process running for 1034.994) 
+2025-08-25T15:37:34.256 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:38:38.306 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:38:38.308 [Thread-88] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:38:38.309 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:38:38.311 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:38:38.312 [Thread-88] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:38:38.349 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:38:38.350 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:38:38.408 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.Error: Unresolved compilation problem: 
+	The blank final field selectList may not have been initialized
+ 
+2025-08-25T15:38:38.412 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-08-25T15:38:38.413 [restartedMain] ERROR o.s.b.SpringApplication - Application run failed 
+java.lang.Error: Unresolved compilation problem: 
+	The blank final field selectList may not have been initialized
+
+	at com.meetmate.infra.user.UserDao.<clinit>(UserDao.java:10)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:216)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:290)
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:263)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:255)
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:406)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:148)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.meetmate.MeetmateApplication.main(MeetmateApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-08-25T15:38:45.913 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:38:45.913 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:38:45.992 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:38:45.992 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:38:45.992 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:38:45.992 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:38:45.996 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:38:45.996 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 82 ms 
+2025-08-25T15:38:46.059 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:38:46.065 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:38:46.066 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:38:46.069 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.171 seconds (process running for 1106.808) 
+2025-08-25T15:38:46.070 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:49:52.069 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:49:52.071 [Thread-92] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:49:52.072 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:49:52.074 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:49:52.074 [Thread-92] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:49:52.116 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:49:52.116 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:49:52.202 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:49:52.202 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:49:52.202 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:49:52.202 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:49:52.206 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:49:52.206 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 89 ms 
+2025-08-25T15:49:52.216 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/com/meetmate/infra/user/UserService.class]: Failed to instantiate [com.meetmate.infra.user.UserService]: Constructor threw exception 
+2025-08-25T15:49:52.216 [restartedMain] INFO o.a.c.c.StandardService - Stopping service [Tomcat] 
+2025-08-25T15:49:52.220 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-08-25T15:49:52.221 [restartedMain] ERROR o.s.b.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/com/meetmate/infra/user/UserService.class]: Failed to instantiate [com.meetmate.infra.user.UserService]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.meetmate.MeetmateApplication.main(MeetmateApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.meetmate.infra.user.UserService]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete MethodHeaderName
+	Syntax error, insert ")" to complete MethodDeclaration
+	Syntax error, insert ";" to complete MethodDeclaration
+
+	at com.meetmate.infra.user.UserService.<init>(UserService.java:10)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 26 common frames omitted
+2025-08-25T15:50:29.007 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:50:29.007 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:50:29.089 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:50:29.089 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:50:29.089 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:50:29.089 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:50:29.096 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:50:29.096 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 88 ms 
+2025-08-25T15:50:29.105 [restartedMain] WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/com/meetmate/infra/user/UserService.class]: Failed to instantiate [com.meetmate.infra.user.UserService]: Constructor threw exception 
+2025-08-25T15:50:29.106 [restartedMain] INFO o.a.c.c.StandardService - Stopping service [Tomcat] 
+2025-08-25T15:50:29.109 [restartedMain] INFO o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+2025-08-25T15:50:29.110 [restartedMain] ERROR o.s.b.SpringApplication - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main/com/meetmate/infra/user/UserService.class]: Failed to instantiate [com.meetmate.infra.user.UserService]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.meetmate.MeetmateApplication.main(MeetmateApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.meetmate.infra.user.UserService]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "}" to complete ClassBody
+	Syntax error on token ")", { expected after this token
+
+	at com.meetmate.infra.user.UserService.<init>(UserService.java:11)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 26 common frames omitted
+2025-08-25T15:51:03.854 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:51:03.854 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:51:03.934 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:51:03.934 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:51:03.934 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:51:03.934 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:51:03.938 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:51:03.938 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 83 ms 
+2025-08-25T15:51:04.023 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:51:04.030 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:51:04.030 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:51:04.033 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.189 seconds (process running for 1844.776) 
+2025-08-25T15:51:04.034 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:51:06.454 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:51:06.456 [Thread-99] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:51:06.456 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:51:06.458 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:51:06.458 [Thread-99] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:51:06.498 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:51:06.499 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:51:06.575 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:51:06.575 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:51:06.575 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:51:06.575 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:51:06.579 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:51:06.579 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 80 ms 
+2025-08-25T15:51:06.644 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:51:06.650 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:51:06.651 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:51:06.654 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.165 seconds (process running for 1847.396) 
+2025-08-25T15:51:06.654 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:52:44.061 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:52:44.063 [Thread-109] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:52:44.063 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:52:44.068 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:52:44.068 [Thread-109] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:52:44.120 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:52:44.120 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:52:44.209 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:52:44.210 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:52:44.210 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:52:44.210 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:52:44.214 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:52:44.214 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 93 ms 
+2025-08-25T15:52:44.284 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:52:44.290 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:52:44.291 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:52:44.294 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.184 seconds (process running for 1945.037) 
+2025-08-25T15:52:44.295 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-25T15:57:29.541 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-25T15:57:29.542 [Thread-113] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-25T15:57:29.543 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:57:29.544 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-25T15:57:29.545 [Thread-113] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:57:29.583 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 28444 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-25T15:57:29.583 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-25T15:57:29.671 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-25T15:57:29.671 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:57:29.671 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-25T15:57:29.671 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-25T15:57:29.675 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-25T15:57:29.675 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 91 ms 
+2025-08-25T15:57:29.747 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-25T15:57:29.753 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-25T15:57:29.754 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-25T15:57:29.757 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.185 seconds (process running for 2230.501) 
+2025-08-25T15:57:29.758 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
