@@ -1,0 +1,9 @@
+<!-- <tr th:each="list : ${list}"> -->
+<!-- <span th:each="list : ${lists}"> </span> -->
+
+
+<tr th:each = "list : ${lists}">
+	<td th:text ="${list.userName}"></td>
+	<td th:text ="${list.userBirth}"></td>
+	<td th:text ="${list.userPw}"></td>
+</tr>
