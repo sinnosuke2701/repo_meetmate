@@ -7,5 +7,20 @@
 
 	<!-- resultMap : 결과를 담아줄 그으르읏 -->
 	<resultMap type="com.meetmate.infra.code.CodeDto" id="resultMapObj"></resultMap>
-	
+		
+		<select id="selectList">
+			select
+				a.cdSeq,
+				a.cdName,
+				a.cdUseNY,
+				a.cdDesc,
+				a.cdMoDate,
+				a.cdReDate,
+				a.cdDelNY,
+				a.codegroup_cgSeq
+			from
+				code a
+			where 1 = 1
+		</select>
+		
 	</mapper>

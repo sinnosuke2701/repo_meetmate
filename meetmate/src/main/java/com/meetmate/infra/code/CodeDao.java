@@ -1,5 +1,12 @@
 package com.meetmate.infra.code;
 
-public interface CodeDao {
+import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CodeDao {
+	
+	List<CodeDto> selectList();
+	
 }

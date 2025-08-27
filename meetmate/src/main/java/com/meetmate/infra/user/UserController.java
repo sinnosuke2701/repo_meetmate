@@ -13,10 +13,23 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping(value="/usr/v1/infra/user/user")
+	@RequestMapping(value="/xdm/v1/infra/user/userXdmList")
 	public String user(Model model) {
 		List<UserDto> users = userService.selectList();
 		model.addAttribute("lists",users); 
-		return "usr/v1/infra/user/user";
+		return "xdm/v1/infra/user/userXdmList";
 	}
+	
+	@RequestMapping(value="/xdm/v1/infra/user/userXdmForm")
+	public String userXdmForm() {
+		return "xdm/v1/infra/user/userXdmForm";
+	}
+	
+	@RequestMapping(value="/xdm/v1/infra/user/userXdmMfom")
+	public String userXdmMfom() {
+		return "xdm/v1/infra/user/userXdmMfom";
+	}
+	
+	
+	
 }
