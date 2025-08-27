@@ -1,0 +1,219 @@
+2025-08-27T15:01:20.156 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 31497 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-27T15:01:20.157 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-27T15:01:20.178 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2025-08-27T15:01:20.178 [restartedMain] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2025-08-27T15:01:20.679 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-27T15:01:20.686 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:01:20.687 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-27T15:01:20.687 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-27T15:01:20.710 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-27T15:01:20.711 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 533 ms 
+2025-08-27T15:01:21.023 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-27T15:01:21.036 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:01:21.045 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-27T15:01:21.052 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 1.096 seconds (process running for 1.46) 
+2025-08-27T15:01:34.465 [http-nio-8085-exec-1] INFO o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2025-08-27T15:01:34.465 [http-nio-8085-exec-1] INFO o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2025-08-27T15:01:34.465 [http-nio-8085-exec-1] INFO o.s.w.s.DispatcherServlet - Completed initialization in 0 ms 
+2025-08-27T15:31:46.151 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-27T15:31:46.156 [Thread-5] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-27T15:31:46.158 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:46.164 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-27T15:31:46.165 [Thread-5] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:46.213 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 31497 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-27T15:31:46.213 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-27T15:31:46.329 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-27T15:31:46.330 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:46.330 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-27T15:31:46.330 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-27T15:31:46.335 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-27T15:31:46.335 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 121 ms 
+2025-08-27T15:31:46.435 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-27T15:31:46.442 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:46.443 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-27T15:31:46.446 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.251 seconds (process running for 1826.868) 
+2025-08-27T15:31:46.448 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-27T15:31:57.139 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2025-08-27T15:31:57.140 [Thread-7] INFO o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+2025-08-27T15:31:57.141 [tomcat-shutdown] INFO o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:57.143 [tomcat-shutdown] INFO o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+2025-08-27T15:31:57.143 [Thread-7] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:57.191 [restartedMain] INFO c.m.MeetmateApplication - Starting MeetmateApplication using Java 17.0.11 with PID 31497 (/Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate/bin/main started by shinnosuke in /Users/shinnosuke/Desktop/shinnosuke/factory/workspace/ws_sts4_4240/repo_meetmate/meetmate) 
+2025-08-27T15:31:57.191 [restartedMain] INFO c.m.MeetmateApplication - The following 1 profile is active: "external" 
+2025-08-27T15:31:57.284 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8085 (http) 
+2025-08-27T15:31:57.284 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:57.284 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2025-08-27T15:31:57.284 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] 
+2025-08-27T15:31:57.289 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2025-08-27T15:31:57.289 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 97 ms 
+2025-08-27T15:31:57.369 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2025-08-27T15:31:57.375 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"] 
+2025-08-27T15:31:57.376 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8085 (http) with context path '/' 
+2025-08-27T15:31:57.379 [restartedMain] INFO c.m.MeetmateApplication - Started MeetmateApplication in 0.202 seconds (process running for 1837.801) 
+2025-08-27T15:31:57.380 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2025-08-27T15:32:15.809 [http-nio-8085-exec-1] INFO o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2025-08-27T15:32:15.809 [http-nio-8085-exec-1] INFO o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2025-08-27T15:32:15.811 [http-nio-8085-exec-1] INFO o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+2025-08-27T15:32:15.834 [http-nio-8085-exec-1] INFO c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+2025-08-27T15:32:16.007 [http-nio-8085-exec-1] INFO c.z.h.p.HikariPool - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6a724c4b 
+2025-08-27T15:32:16.008 [http-nio-8085-exec-1] INFO c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+2025-08-27T15:32:16.024 [http-nio-8085-exec-1] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 4 msec} 
+2025-08-27T15:33:43.345 [http-nio-8085-exec-3] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 2 msec} 
+2025-08-27T15:33:43.619 [http-nio-8085-exec-9] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 1 msec} 
+2025-08-27T15:33:48.540 [http-nio-8085-exec-8] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 1 msec} 
+2025-08-27T15:33:48.760 [http-nio-8085-exec-6] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 2 msec} 
+2025-08-27T15:33:48.952 [http-nio-8085-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 1 msec} 
+2025-08-27T15:44:31.696 [http-nio-8085-exec-9] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 1 msec} 
+2025-08-27T15:44:32.142 [http-nio-8085-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select
+			a.userSeq,
+			a.userName,
+			a.userBirth,
+			a.userGender,
+			a.userId,
+			a.userPw,
+			a.userEmail,
+			a.userPhone,
+			a.userZipCode,
+			a.userAddress,
+			a.userDtAddress,
+			a.userMoDate,
+			a.userReDate,
+			a.userDelNY
+		from
+			user a
+		where 1=1
+ {executed in 2 msec} 
