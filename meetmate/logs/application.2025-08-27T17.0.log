@@ -738,3 +738,4 @@
 			user a
 		where 1=1
  {executed in 1 msec} 
+2025-08-27T17:48:07.536 [HikariPool-3:housekeeper] WARN c.z.h.p.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=32m21s482ms). 
