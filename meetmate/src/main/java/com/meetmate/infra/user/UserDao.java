@@ -9,4 +9,6 @@ public interface UserDao {
 	
 	List<UserDto> selectList();
 	
+	public int insert(UserDto userDto);
+	
 }

@@ -14,35 +14,83 @@
   <!-- ======= Sidebar ======= -->
   <div th:replace="~{xdm/v1/infra/include/aside :: aside}"></div>
   <!-- End Sidebar-->
-
   <main id="main" class="main">
-
-    <div class="pagetitle">
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/xdm/v1/infra/index/indexXdmView">대시보드</a></li>
-          <li class="breadcrumb-item active">회원관리</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Datatables</h5>
-              <!-- Table with stripped rows -->
-              <!-- End Table with stripped rows -->
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main><!-- End #main -->
+  	  <div class="pagetitle">
+	  	  <nav>
+      	  	  <ol class="breadcrumb">
+          		  <li class="breadcrumb-item"><a href="/xdm/v1/infra/index/indexXdmView">대시보드</a></li>
+          		  <li class="breadcrumb-item active">회원관리</li>
+        	  </ol>
+      	  </nav>
+      </div><!-- End Page Title -->
+      <section class="section">
+	  	  <div class="row">
+      		  <div class="col-lg-12">
+        	  	  <div class="card">
+          			  <div class="card-body">
+            			  <h5 class="card-title">회원생성</h5>
+	            			  <form id="form" name="form" method="post" action="/xdm/v1/infra/user/userXdmInst" novalidate>
+            			  	  	  <div class="row g-4">
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">회원 이름</label>
+							      	  	  <input type="text" class="form-control" id="userName" name="userName"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">생년월일</label>
+							      	  	  <input type="text" class="form-control" id="userBirth" name="userBirth"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">성별</label>
+							      	  	  <input type="text" class="form-control" id="userGender" name="userGender"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">아이디</label>
+							      	  	  <input type="text" class="form-control" id="userId" name="userId"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">비밀번호</label>
+							      	  	  <input type="text" class="form-control" id="userPw" name="userPw"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">이메일</label>
+							      	  	  <input type="text" class="form-control" id="userEmal" name="userEmail"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">전화번호</label>
+							      	  	  <input type="text" class="form-control" id="userPhone" name="userPhone"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">우편번호</label>
+							      	  	  <input type="text" class="form-control" id="userZipCode" name="userZipCode"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">주소</label>
+							      	  	  <input type="text" class="form-control" id="userAddress" name="userAddress"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">상세주소</label>
+							      	  	  <input type="text" class="form-control" id="userDtAddress" name="userDtAddress"autocomplete="off">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">등록일</label>
+							      	  	  <input type="text" class="form-control" id="userMoDate" name="userMoDate" disabled value="입력불가">
+							      	  </div>
+							      	  <div class="col-md-3">
+							      	  	  <label class="form-label">수정일</label>
+							      	  	  <input type="text" class="form-control" id="userReDate" name="userReDate" disabled value="입력불가">
+							      	  </div>
+							      	  <div>
+					             	  	  <button type="button" class="btn btn-primary" id="btnList">나가기</button>
+					             	  	  <button type="button" class="btn btn-primary float-end" id="btnInsert">등록하기</button>
+					             	  </div>
+					             </form>
+						     </div>
+          			    </div>
+        		    </div>
+       		    </div>
+      	    </div>
+   	    </section>
+    </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <div th:replace="~{xdm/v1/infra/include/footer :: footer}"></div>
@@ -62,7 +110,24 @@
 
   <!-- Template Main JS File -->
   <script src="/xdm/v1/template/NiceAdmin/assets/js/main.js"></script>
-
+  
+  <!-- list 버튼 -->
+  <script>
+  	  document.getElementById("btnList").onclick = function (){
+  		  window.location = "/xdm/v1/infra/user/userXdmList";
+  	  }
+  </script>
+  
+  <!-- 생성버튼 -->
+  <script>
+  	document.getElementById("btnInsert").onclick = function(){
+  		let form = document.querySelector("form[name=form]");
+  		form.action = "/xdm/v1/infra/user/userXdmInst";
+  		form.submit();
+  	}
+  	
+  </script>
+  
 </body>
 
 </html>

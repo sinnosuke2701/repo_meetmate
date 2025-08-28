@@ -29,4 +29,36 @@
 		where 1=1
 	</select>
 	
+	<insert id="insert">
+		insert into user (
+			userName,
+			userBirth,
+			userGender,
+			userId,
+			userPw,
+			userEmail,
+			userPhone,
+			userZipCode,
+			userAddress,
+			userDtAddress,
+			userMoDate,
+			userReDate,
+			userDelNY
+		) values(
+			#{userName},
+			#{userBirth},
+			#{userGender},
+			#{userId},
+			#{userPw},
+			#{userEmail},
+			#{userPhone},
+			#{userZipCode},
+			#{userAddress},
+			#{userDtAddress},
+			now(),
+			now(),
+			0
+		)
+	</insert>
+	
 	</mapper>

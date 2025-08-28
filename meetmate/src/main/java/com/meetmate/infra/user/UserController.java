@@ -30,6 +30,10 @@ public class UserController {
 		return "xdm/v1/infra/user/userXdmMfom";
 	}
 	
-	
+	@RequestMapping(value="/xdm/v1/infra/user/userXdmInst")
+	public String userXdmInst(UserDto userDto) {
+		userService.insert(userDto);
+		return "redirect:/xdm/v1/infra/user/userXdmList";
+	}
 	
 }

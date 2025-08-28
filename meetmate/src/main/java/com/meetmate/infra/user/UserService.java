@@ -14,4 +14,9 @@ public class UserService {
 	List<UserDto> selectList(){
 		return userDao.selectList();
 	}
+	
+	public int insert(UserDto userDto) {
+		return userDao.insert(userDto);
+	}
+	
 }
